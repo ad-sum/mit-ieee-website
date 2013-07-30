@@ -1,0 +1,13 @@
+.post h1 a {
+	color: #993333;
+}
+
+.post h1 a:hover {
+	text-decoration: none;
+}
+
+.post-details {
+  display: block;
+  margin: -10px 0 10px;
+  color: #666;
+}

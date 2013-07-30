@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MIT IEEE/ACM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Sticky-Footer CSS -->
+    <link href="css/sticky-footer.css" rel="stylesheet">
+
+    <!-- Exec CSS -->
+    <link href="css/exec.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+	<div id="wrap"> <!-- Sticky Footer Wrap Start -->
+	
+    <!-- Static navbar -->
+    <div class="navbar navbar-static-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://web.mit.edu/"><img src="images/mit-logo.png" alt="mit-logo" width="64" height="32" /></a>
+        <div class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="exec.html">Exec</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="partners.html">Partners</a></li>
+          </ul>
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="login.html"><button type="button" class="btn btn-small btn-danger">Login</button></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+            
+    <div class="container">
+    <br />
+    <h1>About Us. Who We Are</h1>
+
+	<div class="group">
+	<div class="student" id="qliu">
+		<img src='images/exec/missing.png' class="img-rounded">
+		<p class="position">President</p>
+		<p class="name">Quanquan Liu</p>
+	</div>
+
+	<div class="student" id="jharia">
+		<img src='images/exec/missing.png' class="img-rounded">
+		<p class="position">Co-President</p>
+		<p class="name">Jesika Haria</p>
+	</div>
+
+	<div class="student" id="mguo">
+		<img src='images/exec/missing.png' class="img-rounded">
+		<p class="position">Vice President</p>
+		<p class="name">Margaret Guo</p>
+	</div>
+
+	<div class="student" id="wtadale">
+		<img src='images/exec/wtadele.png' class="img-rounded">
+		<p class="position">Treasurer</p>
+		<p class="name">Wegene Tadele</p>
+	</div>
+
+	<div class="student" id="dpillai">
+		<img src='images/exec/dpillai.png' class="img-rounded">
+		<p class="position">Secretary</p>
+		<p class="name">Divya Pillai</p>
+	</div>
+
+	<div class="student" id="mlao">
+		<img src='images/exec/mlao.png' class="img-rounded">
+		<p class="position">Publicity Chair</p>
+		<p class="name">Manting Lao</p>
+	</div>
+
+	<div class="student" id="jwu">
+		<img src='images/exec/jwu.png' class="img-rounded">
+		<p class="position">Faculty Chair</p>
+		<p class="name">Jason Wu</p>
+	</div>
+
+	<div class="student" id="mmuco">
+		<img src='images/exec/missing.png' class="img-rounded">
+		<p class="position">Social Chair</p>
+		<p class="name">Manushaqe Muco</p>
+	</div>
+
+	<div class="student" id="hlee">
+		<img src='images/exec/hlee.png' class="img-rounded">
+		<p class="position">Social Chair</p>
+		<p class="name">Harlin 	Lee</p>
+	</div>
+
+	<div class="student" id="kasmus">
+		<img src='images/exec/kasmus.png' class="img-rounded">
+		<p class="position">Historian</p>
+		<p class="name">Kristin Asmus</p>
+	</div>
+
+	<div class="student" id="dlittle">
+		<img src='images/exec/dlittle.png' class="img-rounded">
+		<p class="position">Webmaster</p>
+		<p class="name">Donald Little</p>
+	</div>
+	
+	</div>
+
+	</div>
+
+</div>	<!-- Sticky Footer Wrap End -->
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">
+	        &copy; 2013 MIT IEEE/ACM Club, all rights reserved.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/popover.js"></script>
+    <script type="text/javascript">
+		function wheretoplace(){
+		    var width = window.innerWidth;
+		    if (width<500) return 'top';
+		    return 'right';
+		}
+
+
+		$('#qliu').popover({
+		    placement : wheretoplace,
+		    title : 'About Quanquan',
+		    html : 'True',
+		    trigger: 'hover',
+		    content : '<b>Course:</b> ???<br/>\
+		    	<b>Year:</b> ???<br />\
+		    	<b>Hometown:</b> ???<br />\
+		    	<b>Dorm:</b> ???'
+		});
+		
+		$('#jharia').popover({
+		    placement : wheretoplace,
+		    title : 'About Jesika',
+		    html : 'True',
+		    trigger: 'hover',
+		    content : '<b>Course:</b> ???<br/>\
+		    	<b>Year:</b> ???<br />\
+		    	<b>Hometown:</b> ???<br />\
+		    	<b>Dorm:</b> ???'
+		});
+
+		$('#mguo').popover({
+		    placement : wheretoplace,
+		    title : 'About Margaret',
+		    html : 'True',
+		    trigger: 'hover',
+		    content : '<b>Course:</b> ???<br/>\
+		    	<b>Year:</b> ???<br />\
+		    	<b>Hometown:</b> ???<br />\
+		    	<b>Dorm:</b> ???'
+		});
+
+		$('#wtadale').popover({
+		    placement : wheretoplace,
+		    title : 'About Wegene',
+		    html : 'True',
+		    trigger: 'hover',
+		    content : '<b>Course:</b> 6-2<br/>\
+		    	<b>Year:</b> 2014<br />\
+		    	<b>Hometown:</b> Addis Ababa, Ethiopia<br />\
+		    	<b>Dorm:</b> East Campus'
+		});
+		
+		$('#dpillai').popover({
+		    placement : wheretoplace,
+		    title : 'About Divya',
+		    html : 'True',
+		    trigger: 'hover',
+		    content : '<b>Course:</b> 6-7<br/>\
+		    	<b>Year:</b> 2015<br />\
+		    	<b>Hometown:</b> Chicago, IL<br />\
+		    	<b>Dorm:</b> McCormick Hall'
+		});
+
+		$('#mlao').popover({
+		    placement : wheretoplace,
+		    title : 'About Manting',
+		    html : 'True',
+		    trigger: 'hover',
+		    content : '<b>Course:</b> 6-2<br/>\
+		    	<b>Year:</b> 2016<br />\
+		    	<b>Hometown:</b> Columbus, OH<br />\
+		    	<b>Dorm:</b> Pi Beta Phi'
+		});
+		
+		$('#jwu').popover({
+		    placement : wheretoplace,
+		    title : 'About Jason',
+		    html : 'True',
+		    trigger: 'hover',
+		    content : '<b>Course:</b> 6-2<br/>\
+		    	<b>Year:</b> 2015<br />\
+		    	<b>Hometown:</b> Shenzhen, China<br />\
+		    	<b>Dorm:</b> East Campus'
+		});
+
+		$('#mmuco').popover({
+		    placement : wheretoplace,
+		    title : 'About Manushaqe',
+		    html : 'True',
+		    trigger: 'hover',
+		    content : '<b>Course:</b> 6-3 & 18<br/>\
+		    	<b>Year:</b> 2014<br />\
+		    	<b>Hometown:</b> Vlora, Albania<br />\
+		    	<b>Dorm:</b> Student House'
+		});
+
+		$('#hlee').popover({
+		    placement : wheretoplace,
+		    title : 'About Harin',
+		    html : 'True',
+		    trigger: 'hover',
+		    content : '<b>Course:</b> 6-2<br/>\
+		    	<b>Year:</b> 2016<br />\
+		    	<b>Hometown:</b> Seoul, Korea<br />\
+		    	<b>Dorm:</b> Next House'
+		});
+
+
+		$('#kasmus').popover({
+		    placement : wheretoplace,
+		    title : 'About Kristin',
+		    html : 'True',
+		    trigger: 'hover',
+		    content : '<b>Course:</b> 6-3<br/>\
+		    	<b>Year:</b> 2015<br />\
+		    	<b>Hometown:</b> Stafford, VA<br />\
+		    	<b>Dorm:</b> Next House'
+		});
+
+
+		$('#dlittle').popover({
+		    placement : wheretoplace,
+		    title : 'About Donald',
+		    html : 'True',
+		    trigger: 'hover',
+		    content : '<b>Course:</b> 6-2<br/>\
+		    	<b>Year:</b> 2016<br />\
+		    	<b>Hometown:</b> Neuquen, Argentina<br />\
+		    	<b>Dorm:</b> MacGregor'
+		});
+
+</script>
+
+  </body>
+</html>

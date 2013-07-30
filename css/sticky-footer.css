@@ -1,0 +1,102 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #993333;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+#footer .container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+.container .credit {
+	color: #ffffff;
+	margin: 20px 0;
+	text-align: center;
+}
+
+
+
+/* CONTENT */
+
+.main, .side {
+    z-index:10;
+    position:relative;
+}
+
+.side {
+    padding:50px 0;
+}
+
+
+/* SIDE */
+
+.side {
+    box-shadow:-1px 0 0 #d5d5d5 inset;
+}
+
+.side ul {
+    margin:0 0 0 0;
+}
+
+.side li {
+    list-style:none;
+    text-align:right;
+    margin:0 0 1.5em 0;
+}
+
+.side li a {
+    font-size:18px;
+    color:#111;
+    padding:0.5em 1em;
+}
+
+.side li h5 {
+    margin-right:2em;
+}
+
+.side li a:hover {
+	text-decoration: none;
+	font-size: 19px;
+}
+
+.side li a:after {
+    content:" ›";
+    color:#993333;
+}
+
+.align-right {
+	text-align: right;
+}

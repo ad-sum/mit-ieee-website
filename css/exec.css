@@ -1,0 +1,30 @@
+/*---- Exec BOXES ----*/
+.student {
+	border: 1px dotted #993333;
+	margin: 30px 50px 50px 50px;
+	text-align: center;
+	float: left;
+	padding: 10px;
+	position: relative;
+	}
+
+.student a:link,
+.student a:active,
+.student a:visited,
+.student a:hover {
+	text-decoration: none;
+	}
+
+.student .name {
+	font-size: 18px;
+	text-align: center;
+	margin: 2px 0 0 0;
+	}
+	
+.student .position {
+	font-size: 14px;
+	text-align: center;
+	margin: 15px 0 0 0;
+
+}
+
