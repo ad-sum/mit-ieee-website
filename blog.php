@@ -35,7 +35,7 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="exec.html">About Us</a></li>
-            <li class="active"><a href="blog.html">Blog</a></li>
+            <li class="active"><a href="blog.php">Blog</a></li>
             <li><a href="events.html">Programs & Events</a></li>
             <li><a href="partners.html">Partners</a></li>
           </ul>
@@ -49,8 +49,36 @@
             
     <div class="container">
 
+      <?php
+        
+        /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Cute news Init
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+        
+        //Custom Template
+        $template = "Prototype"; 
+        $number = "10"; // Number of articles per page
+                 
+        if($_POST['do'] == "search" or $_GET['dosearch'] == "yes") {
+            $subaction = "search";
+            $dosearch = "yes";
+            include("blog/search.php");
+          }
+        elseif($_GET['do'] == "archives") {
+            include("blog/show_archives.php");
+          }
+        elseif($_GET['do'] == "stats") {
+            echo "You can download the stats addon and include it here to show how many news, comments … you have";
+            /* include("$path/stats.php"); */ 
+          }
+        else{ include("blog/show_news.php"); }
+
+?>
+
+
+<!-- TEMPLATE
       <div class="post">
-        <h1><a href="#">Woot! Woot!</a></h1>
+        <h1><a>Header</a></h1>
 		
     		<span class="post-details">30 Jul 2013 | By: Admin</span>
 		
@@ -58,34 +86,7 @@
       </div>
 
       <hr />
-
-      <div class="post">
-        <h1><a href="#">Third Post :)</a></h1>
-		
-    		<span class="post-details">30 Jul 2013 | By: Admin</span>
-		
-    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc enim, sodales vitae justo et, sagittis scelerisque orci. Phasellus eros diam, rhoncus at sodales a, posuere viverra mauris. Etiam et dignissim justo. Nullam in tincidunt dolor, eget pretium velit. Nam non purus lorem. Cras convallis nulla nibh, in iaculis sem tempor a. Quisque luctus arcu vitae consequat blandit. In sit amet tellus pretium, sodales nibh quis, suscipit mi. Maecenas at nisi lacus.</p>				
-  		</div>
-
-  		<hr />
-
-  		<div class="post">
-  		  <h1><a href="#">Second Post…</a></h1>
-		
-    		<span class="post-details">30 Jul 2013 | By: Admin</span>
-		
-    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc enim, sodales vitae justo et, sagittis scelerisque orci. Phasellus eros diam, rhoncus at sodales a, posuere viverra mauris. Etiam et dignissim justo. Nullam in tincidunt dolor, eget pretium velit. Nam non purus lorem. Cras convallis nulla nibh, in iaculis sem tempor a. Quisque luctus arcu vitae consequat blandit. In sit amet tellus pretium, sodales nibh quis, suscipit mi. Maecenas at nisi lacus.</p>		
-  		</div>
-
-  		<hr />
-
-  		<div class="post">
-  		  <h1><a href="#">First Post!</a></h1>
-		
-    		<span class="post-details">29 Jul 2013 | By: Admin</span>
-
-    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc enim, sodales vitae justo et, sagittis scelerisque orci. Phasellus eros diam, rhoncus at sodales a, posuere viverra mauris. Etiam et dignissim justo. Nullam in tincidunt dolor, eget pretium velit. Nam non purus lorem. Cras convallis nulla nibh, in iaculis sem tempor a. Quisque luctus arcu vitae consequat blandit. In sit amet tellus pretium, sodales nibh quis, suscipit mi. Maecenas at nisi lacus.</p>		
-  		</div>
+-->
   
     </div> <!-- Container End -->
 

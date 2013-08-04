@@ -1,0 +1,12 @@
+1375325218|2013-08-01 03:46:58|Warning: trim() expects parameter 1 to be string, array given; /core/core.php:2042;
+1375325253|2013-08-01 03:47:33|Warning: trim() expects parameter 1 to be string, array given; /core/core.php:2042;
+1375325276|2013-08-01 03:47:56|Warning: Cannot modify header information - headers already sent by (output started at /example1.php:10); /core/init.php:136;
+1375325276|2013-08-01 03:47:56|Warning: Cannot modify header information - headers already sent by (output started at /example1.php:10); /core/init.php:137;
+1375325439|2013-08-01 03:50:39|Warning: func_get_arg():  Argument 3 not passed to function; /core/core.php:2085;
+1375326170|2013-08-01 04:02:50|Warning: func_get_arg():  Argument 3 not passed to function; /core/core.php:2085;
+1375326189|2013-08-01 04:03:09|Warning: func_get_arg():  Argument 3 not passed to function; /core/core.php:2085;
+1375326200|2013-08-01 04:03:20|Warning: func_get_arg():  Argument 3 not passed to function; /core/core.php:2085;
+1375328398|2013-08-01 04:39:58|Warning: Cannot modify header information - headers already sent by (output started at /example1.php:10); /core/init.php:136;
+1375328399|2013-08-01 04:39:59|Warning: Cannot modify header information - headers already sent by (output started at /example1.php:10); /core/init.php:137;
+1375328635|2013-08-01 04:43:55|Warning: trim() expects parameter 1 to be string, array given; /core/core.php:2042;
+1375348349|2013-08-01 10:12:29|Warning: trim() expects parameter 1 to be string, array given; /core/core.php:2042;
