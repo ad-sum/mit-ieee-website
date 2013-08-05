@@ -164,15 +164,21 @@
   <script src="js/bootstrap.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
+        var $window = $(window);
+    
         $(window).bind('scroll',function(e){
             parallaxScroll();
         });
         function parallaxScroll(){
-            var scrolledY = $(window).scrollTop();
-            $('.parallax').css({
-                'top' : (scrolledY*0.25)+"px",
-                'opacity' : 1-(scrolledY/300)
-            });
+            var windowSize = $window.width();
+            
+            if (windowSize > 768) {
+                    var scrolledY = $(window).scrollTop();
+                    $('.parallax').css({
+                        'top' : (scrolledY*0.25)+"px",
+                        'opacity' : 1-(scrolledY/300)
+                    });
+              }
         }
     });
   </script>
