@@ -18,7 +18,6 @@ $config_ckeditor_customize = "['Source','Maximize','Scayt','PasteText','Undo','R
 $config_date_adjust = "0";
 $config_smilies = "smile,wink,wassat,tongue,laughing,sad,angry,crying";
 $config_auto_archive = "no";
-$config_allow_registration = "1";
 $config_registration_level = "4";
 $config_ban_attempts = "3";
 $config_xss_strict = "1";

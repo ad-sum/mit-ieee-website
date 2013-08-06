@@ -10,3 +10,6 @@
 1375328399|2013-08-01 04:39:59|Warning: Cannot modify header information - headers already sent by (output started at /example1.php:10); /core/init.php:137;
 1375328635|2013-08-01 04:43:55|Warning: trim() expects parameter 1 to be string, array given; /core/core.php:2042;
 1375348349|2013-08-01 10:12:29|Warning: trim() expects parameter 1 to be string, array given; /core/core.php:2042;
+1375771417|2013-08-06 07:43:37|Warning: func_get_arg():  Argument 3 not passed to function; /core/core.php:2085;
+1375771423|2013-08-06 07:43:43|Warning: func_get_arg():  Argument 3 not passed to function; /core/core.php:2085;
+1375771431|2013-08-06 07:43:51|Warning: func_get_arg():  Argument 3 not passed to function; /core/core.php:2085;

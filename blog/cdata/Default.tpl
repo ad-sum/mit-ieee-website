@@ -8,7 +8,7 @@ $template_active = <<<HTML
 
 <div style="float: right;">[edit]Edit[/edit] [full-link]Read more[/full-link] | [com-link]{comments-num} Comments[/com-link]</div>
 
-<div><em>Posted on {date} by {author}</em></div>
+<div><em>Posted on {date} by {nickname}</em></div>
 </div>
 HTML;
 

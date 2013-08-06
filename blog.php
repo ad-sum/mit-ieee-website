@@ -40,7 +40,7 @@
             <li><a href="partners.html">Partners</a></li>
           </ul>
           <ul class="nav navbar-nav pull-right">
-            <li><a href="login.html"><button type="button" class="btn btn-small btn-danger">Login</button></a></li>
+            <li><a href="blog/"><button type="button" class="btn btn-small btn-danger">Login</button></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
