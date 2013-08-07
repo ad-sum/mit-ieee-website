@@ -60,7 +60,7 @@
             <li class="s-news-updates"><a href="#news-updates">News and Updates</a></li>
             <li class="s-faq"><a href="#faq">FAQ</a></li>
 <!--             <li class="s-mailing"><a data-toggle="modal" data-target="#constitution" data-backdrop="true" href="modals/constitution.html"><button type="button" class="btn btn-success">Constitution</button></a></li> -->
-            <li class="s-mailing"><a data-toggle="modal" data-target="#joinUs" data-backdrop="true" href="modals/joinus.html"><button type="button" class="btn btn-danger">Want to Get Involved?</button></a></li>
+            <li class="s-mailing"><a data-toggle="modal" data-target="#joinUs" data-backdrop="true"><button type="button" class="btn btn-danger">Want to Get Involved?</button></a></li>
           </ul>
 
     		</div>
@@ -112,17 +112,82 @@
     <div class="modal fade" id="joinUs">
       <div class="modal-dialog">
         <div class="modal-content">
+          <form name="application" method="post" action="register.php" >
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 class="modal-title">Student Membership Application</h4>
           </div>
           <div class="modal-body">
-  			   …
+
+            <p>MIT ACM/IEEE membership is free for all MIT undergraduate and graduate students.  Becoming a member of the MIT ACM/IEEE chapter is a great way to stay informed on upcoming club activities, and we're always looking for more help with our many programs.</p>
+            
+            <p>Please note that membership in our club is not the same as membership in the international <A href=http://www.acm.org>ACM</A> or <A href=http://www.ieee.org>IEEE</A> organizations. However, we do have access to resources that wouldn't be available without membership to the IEEE branch such as access to certain publications, contacts in IEEE and industry, and ability to coordinate events with the National organization.</p>
+            
+            
+            
+            <div class="input-group">
+              <span class="input-group-addon">Name</span>
+              <input type="text" class="form-control" placeholder="Name" name="required-name">
+            </div>
+            <br />
+            
+            <div class="input-group">
+              <span class="input-group-addon">MIT E-mail</span>
+              <input type="text" class="form-control" placeholder="kerberos@mit.edu" name="required-email">
+            </div>
+            <br />
+            
+            Year:
+            <select class="form-control" name="year">
+              <option>Freshman</option>
+              <option>Sophomore</option>
+              <option>Junior</option>
+              <option>Senior</option>
+              <option>Graduate Student</option>
+            </select>
+            <br />
+            
+            <div class="input-group">
+            Course:
+            <select class="form-control" name="course">
+              <option>6(1)</option>
+              <option>6(2)</option>
+              <option>6(3)</option>
+              <option>Other</option>
+            </select>
+            </div>
+            <br />
+            
+            <div class="input-group">
+            Committees: <br />
+            <label class="checkbox-inline">
+              <input type="checkbox" id="int1" value="Publications"> Publications
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="int2" value="Social Events"> Social Events
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="int3" value="Corporate Relations"> Corporate Relations
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="int4" value="Faculty Relations"> Faculty Relations
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="int5" value="Publicity"> Publicity
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="int6" value="TechTalks"> TechTalks
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="int7" value="Web"> Web
+            </label>
+            </div>
           </div>
           <div class="modal-footer">
             <a class="btn" data-dismiss="modal">Close</a>
-            <a href="#" class="btn btn-danger">Submit!</a>
+            <input type="submit" value="Submit" align="middle" class="btn btn-danger" >
           </div>
+          </form>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
@@ -135,7 +200,7 @@
             <h4 class="modal-title">Constitution</h4>
           </div>
           <div class="modal-body">
-  		    	…
+  		    	Loading …
           </div>
           <div class="modal-footer">
             <a href="#" data-dismiss="modal" class="btn btn-danger">Close</a>
